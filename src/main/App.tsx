@@ -1,12 +1,13 @@
 import React from 'react';
 import Background from '../components/background';
 import Animations from '../components/animations';
-import { Suspense } from 'react';
+import { Suspense, lazy } from 'react';
 import Spinner from '../components/spinner';
-import ColumnContainer from '../components/column_container';
 import About from './about';
 import RowContainer from '../components/row_container';
 import Socials from './socials';
+
+const LazyColumnContainer = lazy(() => import ('../components/column_container'));
 
 const App: React.FC = () => {
   return (
@@ -15,12 +16,12 @@ const App: React.FC = () => {
       <Background />
       <Suspense fallback={<Spinner />}>
         <div className="animated-content">
-          <ColumnContainer>
+          <LazyColumnContainer>
             <About />
             <RowContainer>
               <Socials />
             </RowContainer>
-          </ColumnContainer>
+          </LazyColumnContainer>
         </div>
       </Suspense>
     </div>
