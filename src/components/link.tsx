@@ -1,4 +1,4 @@
-import { type LinkProps, colors, Link, styled } from "@mui/material";
+import { type LinkProps, Link, styled } from "@mui/material";
 
 const Linked = styled(Link)<LinkProps>(() => ({
     '&:hover': {

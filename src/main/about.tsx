@@ -1,4 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
 import Column from "../components/column"
 import Item from "../components/item"
 import Welcome from "../content/welcome"

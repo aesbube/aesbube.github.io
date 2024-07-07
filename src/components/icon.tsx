@@ -13,6 +13,13 @@ const Icon = forwardRef<HTMLButtonElement, Props>(
         component={href ? 'a' : 'button'}
         href={href}
         target={href ? '_blank' : undefined}
+        sx={{
+          width: '44px',
+          height: '44px',
+          '&:hover': {
+            backgroundColor: 'transparent',
+          }
+        }}
         {...props}
       >
         {children}

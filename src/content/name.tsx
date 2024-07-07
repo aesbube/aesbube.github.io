@@ -6,35 +6,18 @@ const Name = () => {
             <Link
                 href="https://github.com/aesbube"
                 sx={{
-                    '@keyframes animationForwards': {
-                        from: {
-                            color: '#cecff5',
-                            transition: 'color 0.5s',
-                        },
-                        to: {
-                            color: '#7f7fb7',
-                            transition: 'color 0.5s',
-                        },
-                    },
-                    '@keyframes animationBackwards': {
-                        from: {
-                            color: '#7f7fb7',
-                            transition: 'color 0.5s',
-                        },
-                        to: {
-                            color: '#cecff5',
-                            transition: 'color 0.5s',
-                        },
-                    },
-                    '&:hover': {
-                        animationName: 'animationForwards',
-                        animationDuration: '1s',
-                        animationFillMode: 'forwards',
-                    },
-                    animationName: 'animationBackwards',
-                    animationDuration: '1s',
                     color: '#cecff5',
                     textDecoration: 'none',
+                    transition: 'color 1s ease',
+                    '&:hover': {
+                        color: '#7f7fb7',
+                    },
+                    '@media (max-width:900px)': {
+                        fontSize: '40px',
+                    },
+                    '@media (max-height:400px)': {
+                        fontSize: '40px',
+                    },
                 }}
                 target='_blank'
             >

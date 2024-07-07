@@ -31,16 +31,14 @@ const Socials = () => {
                 </Item>
             </Tooltip>
             <Tooltip title="LinkedIn">
-                <Item sx={{
-                    marginTop: '-4px',
-                }}>
+                <Item>
                     <Icon href="https://www.linkedin.com/in/ljubicadamjanovikj/">
                         <Linkedin />
                     </Icon>
                 </Item>
             </Tooltip>
             <Tooltip title="Disocrd">
-                <Item onClick={copyToClipboard} sx={{ cursor: 'pointer' }}>
+                <Item onClick={copyToClipboard} sx={{ cursor: 'pointer', width: '44px', height: '44px', }}>
                     <Discord />
                 </Item>
             </Tooltip>

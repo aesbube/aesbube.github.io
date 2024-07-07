@@ -11,8 +11,14 @@ const Age = () => {
         <Typography fontSize={21} sx={{
             textAlign: 'center',
             marginTop: '10px',
-            color: '#9393c9',
+            color: '#c4c5f5',
             textDecoration: 'none',
+            '@media (max-width:900px)': {
+                fontSize: '17px',
+            },
+            '@media (max-height:400px)': {
+                fontSize: '17px',
+            },
         }}>
             {age} years old
         </Typography>
