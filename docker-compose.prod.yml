@@ -1,0 +1,11 @@
+name: aesbube
+
+services:
+  app:
+    container_name: aesbube-home
+    image: aesbube/personal-website:latest
+    restart: unless-stopped
+    ports:
+      - 80:80
+    environment:
+      - NODE_ENV=production
