@@ -38,11 +38,20 @@ const Socials = () => {
                 </Item>
             </Tooltip>
             <Tooltip title="Disocrd">
-                <Item onClick={copyToClipboard} sx={{ cursor: 'pointer', width: '44px', height: '44px', }}>
+                <Item onClick={copyToClipboard} sx={{
+                    cursor: 'pointer',
+                    width: '44px',
+                    height: '44px',
+                    borderRadius: '50%',
+                    transition: 'background-color 0.2s ease',
+                    '&:hover': {
+                        backgroundColor: '#7f7fb7',
+                    }
+                }}>
                     <Discord />
                 </Item>
             </Tooltip>
-            
+
         </Row>
     );
 };

@@ -16,14 +16,15 @@ const Icon = forwardRef<HTMLButtonElement, Props>(
         sx={{
           width: '44px',
           height: '44px',
+          transition: 'background-color 0.2s ease',
           '&:hover': {
-            backgroundColor: 'transparent',
+            backgroundColor: '#7f7fb7',
           }
         }}
         {...props}
       >
         {children}
-      </IconButton>
+      </IconButton >
     );
   }
 );
