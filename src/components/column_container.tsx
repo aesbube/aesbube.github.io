@@ -1,5 +1,4 @@
 import { Container, styled } from "@mui/material";
-import Animations from '../components/animations';
 import { css } from '@emotion/react';
 
 const fadeInAnimation = css`
