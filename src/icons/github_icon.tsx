@@ -2,7 +2,9 @@ import { SvgIcon } from "@mui/material";
 
 const Github = () => {
     return (
-        <SvgIcon>
+        <SvgIcon sx={{
+            marginTop: '1px',
+        }}>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
