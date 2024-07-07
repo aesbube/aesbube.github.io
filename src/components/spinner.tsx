@@ -8,7 +8,7 @@ const Spinner = () => {
             justifyContent: 'center',
             height: '100vh',
         }}>
-            <CircularProgress />
+            <CircularProgress sx={{ color: '#cecff5' }} />
         </Box>
     );
 };
