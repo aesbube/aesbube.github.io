@@ -8,6 +8,15 @@ This is the repository for my personal website built with React and MUI.
 2. **Get the `docker-compose.prod.yml` file from this repository.**
 3. **Run Docker Compose:**
     ```sh
-    docker-compose -f docker-compose.prod.yml up -d
+    docker-compose up -d
     ```
+## Install
 
+1. **Clone this repository**
+    ```sh
+    git clone https://github.com/aesbube/aesbube.github.io.git
+    ```
+2. **To install dependencies run the command:** 
+    ```sh
+    npm i
+    ```
