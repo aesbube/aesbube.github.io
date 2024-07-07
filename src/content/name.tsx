@@ -4,7 +4,7 @@ const Name = () => {
     return (
         <Typography fontSize={60}>
             <Link
-                href="https://github.com/aesbube"
+                href="https://github.com/aesbube/aesbube.github.io"
                 sx={{
                     color: '#cecff5',
                     textDecoration: 'none',
