@@ -1,4 +1,4 @@
-# aesbube.dev
+# aesbube.github.io
 
 This is the repository for my personal website built with React and MUI.
 
