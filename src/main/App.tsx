@@ -11,7 +11,7 @@ const LazyColumnContainer = lazy(() => import ('../components/column_container')
 
 const App: React.FC = () => {
   return (
-    <div>
+    <>
       <Animations />
       <Background />
       <Suspense fallback={<Spinner />}>
@@ -24,7 +24,7 @@ const App: React.FC = () => {
           </LazyColumnContainer>
         </div>
       </Suspense>
-    </div>
+    </>
   );
 };
 
