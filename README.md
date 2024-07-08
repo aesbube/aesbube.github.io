@@ -12,7 +12,7 @@ This is the repository for my personal website built with React and MUI.
     ```
 ## Install
 
-1. **Clone this repository**
+1. **Clone this repository:**
     ```sh
     git clone https://github.com/aesbube/aesbube.github.io.git
     ```
