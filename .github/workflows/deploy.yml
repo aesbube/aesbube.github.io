@@ -41,6 +41,8 @@ jobs:
     needs: build_and_deploy
     permissions:
       contents: write
+      pages: write
+      id-token: write
 
     steps:
       - name: Checkout Repository
@@ -64,7 +66,7 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
-          git remote set-url origin https://${GITHUB_ACTOR}:${PERSONAL_ACCESS_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>"
         env:
-          PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
