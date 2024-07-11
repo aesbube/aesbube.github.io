@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     if: github.actor == 'dependabot[bot]'
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
       - name: Dependabot metadata
         id: metadata
         uses: dependabot/fetch-metadata@v2
@@ -17,7 +20,7 @@ jobs:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
       
       - name: Merge Dependabot PR
-        if: steps.metadata.outputs.update-type == 'version-update:semver-minor'
+        if: contains(steps.metadata.outputs.dependency-names, 'my-dependency') && steps.metadata.outputs.update-type == 'version-update:semver-minor'
         run: gh pr merge --auto --merge "$PR_URL"
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
