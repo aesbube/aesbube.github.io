@@ -8,3 +8,4 @@ eslint.config.mjs
 nginx.conf
 package-lock.json
 README.md
+.github
