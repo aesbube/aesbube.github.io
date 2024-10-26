@@ -41,7 +41,7 @@ const Socials = () => {
           </Icon>
         </Item>
       </Tooltip>
-      <Tooltip title="Disocrd">
+      <Tooltip title="Discord">
         <Item
           onClick={copyToClipboard}
           sx={{
