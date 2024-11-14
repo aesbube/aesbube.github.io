@@ -8,7 +8,7 @@ This is the repository for my personal website built with React and MUI.
 2. **Get the `docker-compose.prod.yml` file from this repository.**
 3. **Run Docker Compose:**
     ```sh
-    docker-compose up -d
+    docker-compose -f docker-compose.prod.yml up -d
     ```
 ## Install
 
